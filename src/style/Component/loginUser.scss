@@ -1,0 +1,43 @@
+.Card_outer
+{
+    width:32rem ;
+    height: 50rem;
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+.login_heading
+{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 4rem;
+    &-sub{
+      margin-top: 2rem;
+
+        &-1{
+            font-size: 1.6rem;
+
+            &-2
+            {
+                padding: .8rem;
+                border-radius: 1rem;
+            }
+        }
+    }
+}
+
+.btn_login{
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    border-radius: .6rem;
+    margin-right: 2rem;
+    text-align: center;
+    width: 100%;
+    
+  
+}
+.signup{
+ width:8rem;
+ height: 3.4rem;
+
+}

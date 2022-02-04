@@ -20,7 +20,14 @@ function Header(props) {
                 </Col>
                 <Col xs={4} style={{ padding: '0px'}}>
                     <Navbar expand="lg" variant="light" bg="light">
-                            <Navbar.Brand href="#">Navbar</Navbar.Brand>
+                    <div class="input-group search_width">
+  <input type="search" class="form-control rounded " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <button type="button" class="btn btn-outline-primary">search</button>
+</div>
+                 <div >
+
+  <button type="button" class="btn btn-outline-primary ml-2">Login</button>
+</div>
                     </Navbar>
                 </Col>
                 </Row>
