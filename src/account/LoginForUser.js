@@ -4,30 +4,28 @@ import { Link } from 'react-router-dom';
 function LoginForUser(props) {
     return (
         <div className='App-header'>
-            <Card style={{ width: '18rem' }}>
+            <Card  className='Card_outer'>
                 <Card.Body>
-                    <Card.Title>24Seven Login</Card.Title>
+                    <Card.Title className='login_heading'>Czar Login</Card.Title>
                     <Form>
-                        <Form.Group className="mb-3" controlId="formBasicEmail">
-                            <Form.Label>Email address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Group className="mb-3 login_heading-sub" controlId="formBasicEmail">
+                            <Form.Label className='login_heading-sub-1'>Email address</Form.Label>
+                            <Form.Control className='login_heading-sub-1-2' type="email" placeholder="Enter email" />
                             <Form.Text className="text-muted">
-                                We'll never share your email with anyone else.
+                              
                             </Form.Text>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicPassword">
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control type="password" placeholder="Password" />
+                            <Form.Label className='login_heading-sub-1'>Password</Form.Label>
+                            <Form.Control className='login_heading-sub-1-2' type="password" placeholder="Password" />
                         </Form.Group>
-                        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                            <Form.Check type="checkbox" label="Check me out" />
-                        </Form.Group>
-                        <Button variant="primary" type="submit">
+                       
+                        <Button variant="primary" className='btn_login' type="submit">
                             Login
                         </Button>
-                        <Button variant="primary">
-                            <Link to='/register'>Sign Up</Link>
+                        <Button variant="primary" className='btn_login'> Signup
+                            {/* <Link to='/register'>Sign Up</Link> */}
                         </Button>
                     </Form>
                 </Card.Body>
