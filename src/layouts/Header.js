@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Container, Row, Col, Navbar, Nav } from 'react-bootstrap'
 function Header(props) {
     return (
             <Row style={{ padding: '0px'}}>
@@ -20,17 +20,16 @@ function Header(props) {
                 </Col>
                 <Col xs={4} style={{ padding: '0px'}}>
                     <Navbar expand="lg" variant="light" bg="light">
-                    <div class="input-group search_width">
-  <input type="search" class="form-control rounded " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <button type="button" class="btn btn-outline-primary">search</button>
-</div>
-                 <div >
-
-  <button type="button" class="btn btn-outline-primary ml-2">Login</button>
-</div>
+                        <div class="input-group search_width">
+                            <input type="search" class="form-control rounded " placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            <button type="button" class="btn btn-outline-primary">search</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-outline-primary ml-2">Login</button>
+                        </div>
                     </Navbar>
                 </Col>
-                </Row>
+            </Row>
     );
 }
 
