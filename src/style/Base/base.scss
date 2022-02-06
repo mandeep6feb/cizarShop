@@ -7,6 +7,7 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  overflow-anchor: none;
 }
 
 :root {
@@ -30,8 +31,12 @@ html {
 }
 
 body {
-  box-sizing: border-box;
-  font-family: "Public Sans", sans-serif;
-  position: relative;
+
+
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5em;
+  color: #000;
 }

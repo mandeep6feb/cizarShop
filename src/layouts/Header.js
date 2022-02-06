@@ -9,10 +9,10 @@ function Header(props) {
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
-                                    <Navbar.Brand href="#">Navbar</Navbar.Brand>
-                                    <Nav.Link href="#home">Home</Nav.Link>
-                                    <Nav.Link href="#link">About</Nav.Link>
-                                    <Nav.Link href="#link">Blog</Nav.Link>
+                                    <Navbar.Brand className="header-nav" href="#">Navbar</Navbar.Brand>
+                                    <Nav.Link className="header-nav" href="#home">Home</Nav.Link>
+                                    <Nav.Link className="header-nav" href="#link">About</Nav.Link>
+                                    <Nav.Link className="header-nav" href="#link">Blog</Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>
