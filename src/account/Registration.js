@@ -18,20 +18,21 @@ function Registration() {
             <Card className='Card_outer_signup'>
                 <Card.Body>
                     <Card.Title className='signup_heading'> Czar Registration</Card.Title>
-                    <Form classNam>
+                    <Form >
                         <Row>
                             <Col>
-                                <Form.Group className="mb-3">
+                                <Form.Group className="mb-3 ">
                                     <Form.Label className='login_heading-sub-1'>First Name</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' name="fname" onChange={(e) => handleChange(e)} value={signup.fname} type="text" placeholder="enter your first name" />
+                                    <Form.Control className='login_heading-sub-1-2' name="fname" onChange={(e) => handleChange(e)} value={signup.fname.trim().replace(/[^A-Za-z ]/, "")} type="text" placeholder="enter your first name" />
                                     <Form.Text className="text-muted">
                                     </Form.Text>
                                 </Form.Group>
+                                
                             </Col>
                             <Col>
                                 <Form.Group className="mb-3 ">
                                     <Form.Label className='login_heading-sub-1'>Last Name</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' name="lname" onChange={(e) => handleChange(e)} value={signup.lname} type="text" placeholder="enter your last name" />
+                                    <Form.Control className='login_heading-sub-1-2' name="lname" onChange={(e) => handleChange(e)} value={signup.lname.trim().replace(/[^A-Za-z ]/, "")} type="text" placeholder="enter your last name" />
                                 </Form.Group>
                             </Col>
                         </Row>
@@ -39,7 +40,7 @@ function Registration() {
                             <Col>
                                 <Form.Group className="mb-3">
                                     <Form.Label className='login_heading-sub-1'>Email</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' name="email" onChange={(e) => handleChange(e)} value={signup.email} type="email" placeholder="enter your email" />
+                                    <Form.Control className='login_heading-sub-1-2' name="email" onChange={(e) => handleChange(e)} value={signup.email.trim()} type="email" placeholder="enter your email" />
                                     <Form.Text className="text-muted">
                                     </Form.Text>
                                 </Form.Group>
@@ -47,7 +48,9 @@ function Registration() {
                             <Col>
                                 <Form.Group className="mb-3">
                                     <Form.Label className='login_heading-sub-1'>Phone</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' name="number" onChange={(e) => handleChange(e)} value={signup.number} type="number" placeholder="enter your phone number" />
+                                    <Form.Control className='login_heading-sub-1-2' name="number" onChange={(e) => handleChange(e)} value={signup.number .toString()
+.replace(/[^0-9]/g, "")
+                      .trim()} type="text" placeholder="enter your phone number" />
                                 </Form.Group>
                             </Col>
                         </Row>
@@ -55,7 +58,7 @@ function Registration() {
                             <Col>
                                 <Form.Group className="mb-3">
                                     <Form.Label className='login_heading-sub-1'>Password</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' nam="password" onChange={(e) => handleChange(e)} value={signup.password} type="text" placeholder="enter your password" />
+                                    <Form.Control className='login_heading-sub-1-2' name="password" onChange={(e) => handleChange(e)} value={signup.password} type="text" placeholder="enter your password" />
                                 </Form.Group>
                             </Col>
                             <Col>
