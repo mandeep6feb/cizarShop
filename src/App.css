@@ -70,7 +70,10 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
-
+.main_page {
+  /* height: 1200px; */
+  min-height: auto;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
