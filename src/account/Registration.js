@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Form, Card, Button, Row, Col } from 'react-bootstrap';
+import { toaster, Fisrt_Name } from '../utilities/Constants'
 
 function Registration() {
     const [signup, setSignup] = useState({fname: '',lname: '', email:'', number: '', confirm: '', password: '' })
@@ -11,7 +12,9 @@ function Registration() {
         }))
     }
     function submitData() {
-        console.log(signup)
+        toaster(1, 'success')
+        toaster(2, Fisrt_Name)
+        toaster(3, 'info')
     }
     return (
         <div className='App-header'>
@@ -24,7 +27,7 @@ function Registration() {
                                 <Form.Group className="mb-3 ">
                                     <Form.Label className='login_heading-sub-1'>First Name</Form.Label>
                                     <Form.Control className='login_heading-sub-1-2' name="fname" onChange={(e) => handleChange(e)} value={signup.fname.trim().replace(/[^A-Za-z ]/, "")} type="text" placeholder="enter your first name" />
-                                    <Form.Text className="text-muted">
+                                    <Form.Text className="text-muted">{Fisrt_Name}
                                     </Form.Text>
                                 </Form.Group>
                                 
@@ -48,9 +51,10 @@ function Registration() {
                             <Col>
                                 <Form.Group className="mb-3">
                                     <Form.Label className='login_heading-sub-1'>Phone</Form.Label>
-                                    <Form.Control className='login_heading-sub-1-2' name="number" onChange={(e) => handleChange(e)} value={signup.number .toString()
-.replace(/[^0-9]/g, "")
-                      .trim()} type="text" placeholder="enter your phone number" />
+                                    <Form.Control className='login_heading-sub-1-2' name="number" onChange={(e) => handleChange(e)}
+                                            value={signup.number .toString()
+                                            .replace(/[^0-9]/g, "").trim()}
+                                             type="text" placeholder="enter your phone number" />
                                 </Form.Group>
                             </Col>
                         </Row>

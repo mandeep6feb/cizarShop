@@ -1,17 +1,12 @@
 import React from 'react';
-import Header from '../../layouts/Header';
 import Slider from './Slider';
-import Footer from '../../layouts/Footer';
-import Hero from '../userComponent/Hero'
+import Hero from './Hero';
 function Homepage(props) {
     return (
-        <div>
-            <Header />
+        <>
             <Slider />
-            <Hero/>
-            <Footer/>
-    
-        </div>
+            <Hero />
+        </>
     );
 }
 
